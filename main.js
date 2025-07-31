@@ -76,8 +76,8 @@ const notify = async (notice) => {
           headers: { 'content-type': 'application/json' },
           body: JSON.stringify({
             msgtype: 'text',
-            markdown: {
-                content: notice.join('<br>')
+            text: {
+                content: notice.join('<br>').join('\n')
             }
           }),
         })
