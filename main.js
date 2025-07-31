@@ -77,7 +77,7 @@ const notify = async (notice) => {
           body: JSON.stringify({
             msgtype: 'text',
             text: {
-                content: notice.join('<br>').join('\n')
+                content: notice.join('<br>\n')
             }
           }),
         })
